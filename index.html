@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BALILIHAN CENTRAL ELEMENTARY SCHOOL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 12px 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #1b4332;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    video {
+      max-width: 100%;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* BUTTON */
+    .menu-btn {
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #2d6a4f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .menu-btn:hover {
+      background-color: #1b4332;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- Replace logo.png with your actual logo file -->
+    <img src="logo.png" alt="School Logo">
+    <h1>BALILIHAN CENTRAL ELEMENTARY SCHOOL</h1>
+  </header>
+
+  <main>
+    <!-- Replace video.mp4 with your actual video file -->
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <button class="menu-btn" onclick="location.href='dashboard3.html'">
+     Main menu
+    </button>
+  </main>
+
+</body>
+</html>

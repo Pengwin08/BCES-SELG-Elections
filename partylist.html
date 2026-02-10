@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidates Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFD580, #FFED99);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: red;
+            padding: 20px;
+        }
+
+        header img {
+            width: 60px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto 100px auto; /* space for bottom button */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* MAIN MENU BUTTON AT BOTTOM */
+        .main-menu {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .main-menu:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="School Logo">
+    <h1>SUPREME ELEMENTARY LEARNER GOVERNMENT</h1>
+    <p>BALILIHAN CENTRAL ELEMENTARY SCHOOL</p>
+    <p>School ID: 117995</p>
+</header>
+
+<div class="container">
+    <h2 style="text-align: center;">Candidates Dashboard</h2>
+    <div class="buttons">
+        <button class="btn" onclick="location.href='ONE.html'">ONE Partylist</button>
+        <button class="btn" onclick="location.href='VOICE.html'">VOICE Partylist</button>
+        <button class="btn" onclick="location.href='independent.html'">Independent</button>
+    </div>
+</div>
+
+<!-- MAIN MENU BUTTON AT BOTTOM -->
+<button class="main-menu" onclick="location.href='dashboard3.html'">
+    Main Menu
+</button>
+
+</body>
+</html>
